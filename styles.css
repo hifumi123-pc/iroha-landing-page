@@ -308,16 +308,18 @@ section.block.warm { background: var(--paper-tint); }
 .section-head h2 {
   font-family: var(--serif);
   font-weight: 700;
-  font-size: clamp(32px, 4.4vw, 52px);
-  line-height: 1.45;
+  font-size: clamp(26px, 3.8vw, 40px); /* 3行のちぎれを防ぐ美しいサイズ上限 */
+  line-height: 1.4;
   margin: 18px 0 0;
   letter-spacing: 0.06em;
   position: relative;
+  word-break: keep-all; /* 単語の途中で不自然に改行されるのを防止 */
+  overflow-wrap: anywhere;
 }
 .section-head .right { padding-top: 20px; }
 .section-head .lead {
-  font-size: 18px;
-  line-height: 2.2;
+  font-size: 19px; /* 右側のリード文も少し読みやすく大きく */
+  line-height: 2.1;
   color: var(--ink-soft);
   max-width: 560px;
 }
@@ -330,7 +332,7 @@ section.block.warm { background: var(--paper-tint); }
 /* small spot illustration */
 .spot {
   position: absolute;
-  width: 96px; height: 96px;
+  width: 90px; height: 90px;
   border-radius: 50%;
   background:
     radial-gradient(circle at 30% 30%, var(--sun) 0%, var(--sun) 30%, transparent 30%),
@@ -349,15 +351,15 @@ section.block.warm { background: var(--paper-tint); }
   color: rgba(31,29,26,0.55);
   letter-spacing: 0.06em;
 }
-.spot.tl { top: -110px; left: -12px; }
-.spot.tr { top: -110px; right: 24px; }
+.spot.tl { top: -100px; left: -12px; }
+.spot.tr { top: -100px; left: 0; right: auto; } /* 文字の真上ではなく、左上の安全な空間へ配置 */
 .spot.br { bottom: -40px; right: -20px; }
 
 @media (max-width: 760px) {
   .section-head { grid-template-columns: 1fr; gap: 16px; margin-bottom: 48px; }
   .section-head .right { padding-top: 0; }
   .spot { width: 70px; height: 70px; }
-  .spot.tl, .spot.tr { top: -84px; }
+  .spot.tl, .spot.tr { top: -84px; left: 0; }
 }
 
 /* ===================== ABOUT ===================== */
