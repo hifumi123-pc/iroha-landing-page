@@ -822,20 +822,18 @@ section.block.warm { background: var(--paper-tint); }
 
 /* ===================== PRICING ===================== */
 .price-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 80px;
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
 }
-.price-intro h2 { line-height: 1.5; margin-top: 18px;}
-.price-intro p { font-size: 18px; line-height: 2.2; color: var(--ink-soft); margin: 0; }
-.price-intro p strong { color: var(--sky-deep); font-weight: 700; }
 .price-card {
   background: #fff;
   border-radius: 24px;
   padding: 56px 48px;
   position: relative;
   box-shadow: 0 24px 50px -28px rgba(31,29,26,0.22);
+  width: 100%;
+  max-width: 640px;
 }
 .price-card .badge-wrap {
   position: absolute; top: -16px; left: 48px;
@@ -901,7 +899,7 @@ section.block.warm { background: var(--paper-tint); }
   flex-shrink: 0;
 }
 @media (max-width: 900px) {
-  .price-wrap { grid-template-columns: 1fr; gap: 48px; }
+  .price-wrap { margin-top: 36px; }
   .price-card { padding: 40px 28px; }
 }
 
