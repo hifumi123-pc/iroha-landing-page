@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>いろはデジタル倶楽部 — Iroha Digital Club</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Klee+One:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- メインスタイルシート -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* density modifiers */
+    body.density-compact { --gutter: clamp(16px, 3vw, 40px); }
+    body.density-compact section.block { padding: clamp(60px, 8vw, 110px) 0; }
+    body.density-airy { --gutter: clamp(28px, 5vw, 88px); }
+    body.density-airy section.block { padding: clamp(100px, 14vw, 200px) 0; }
+
+    /* hero center variant */
+    body.hero-center .hero-inner { text-align: center; max-width: 880px; margin-inline: auto; padding-bottom: 120px; }
+    body.hero-center .hero-tag { justify-content: center; }
+    body.hero-center .hero-sub { margin-inline: auto; }
+    body.hero-center .hero-actions { justify-content: center; }
+    body.hero-center .hero { align-items: center; }
+    body.hero-center .hero-rail { display: none; }
+  </style>
+</head>
+<body class="theme-mori density-regular" style="font-size: 19px; font-family: 'Noto Sans';">
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="nav" id="main-nav" data-screen-label="nav">
+  <a href="#top" class="brand">
+    <div class="brand-text">
+      <h1 class="ja">いろはデジタル倶楽部</h1>
+    </div>
+  </a>
+  <div class="nav-right">
+    <button class="nav-pill" id="menu-toggle" aria-label="メニューを開く" aria-expanded="false">
+      <span class="ico"><span></span><span></span><span></span></span>
+      <span class="nav-menu-text">メニュー</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ NAVIGATION DRAWER ============ -->
+<div class="nav-drawer" id="nav-drawer">
+  <div class="nav-drawer-overlay" id="nav-drawer-overlay"></div>
+  <div class="nav-drawer-content">
+    <button class="nav-drawer-close" id="nav-drawer-close" aria-label="メニューを閉じる">×</button>
+    <div class="nav-drawer-brand">いろはデジタル倶楽部</div>
+    <ul class="nav-drawer-links">
+      <li><a href="#about">いろはについて</a></li>
+      <li><a href="#values">大切にしていること</a></li>
+      <li><a href="#curriculum">学べること</a></li>
+      <li><a href="#works">できること</a></li>
+      <li><a href="#audience">対象となる方</a></li>
+      <li><a href="#schedule">開催スケジュール</a></li>
+      <li><a href="#instructor">講師紹介</a></li>
+      <li><a href="#pricing">料金のご案内</a></li>
+      <li><a href="#flow">無料体験までの流れ</a></li>
+      <li><a href="#faq">よくあるご質問</a></li>
+    </ul>
+    <div style="margin-top: 40px; padding: 0 20px;">
+      <a href="#contact" class="btn btn-sun" style="width: 100%; justify-content: center; box-sizing: border-box;">無料体験に申し込む</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-screen-label="hero">
+  <div class="hero-art">
+    <img src="https://123.okinawa/wp-content/uploads/2026/05/irohatop1.webp" alt="いろはデジタル倶楽部 メインビジュアル" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;" />
+  </div>
+  <div class="hero-headline">
+    <h2 class="hero-title">
+      デジタルで仕事をラクにする場所
+    </h2>
+  </div>
+
+  <div class="hero-sub-row">
+    <div>
+      <p>
+        一人で抱え込みがちなチラシ作りや事務作業。<br/>
+        同じ悩みを持つ仲間と一緒に、ホッと一息つきながら学べる場所です。
+      </p>
+    </div>
+  </div>
+</header>
+
+<!-- ============ STATS ============ -->
+<section class="stats" data-screen-label="stats">
+  <div class="stats-grid reveal">
+    <div class="stat">
+      <div class="num">3,500<small>人以上</small></div>
+      <div class="ja">延べ人数</div>
+    </div>
+    <div class="stat">
+      <div class="num">6<small>人</small></div>
+      <div class="ja">少人数制</div>
+    </div>
+    <div class="stat">
+      <div class="num">月4<small>回</small></div>
+      <div class="ja">毎週木曜</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="block" id="about" data-screen-label="about">
+  <div class="container">
+    <div class="section-head">
+      <div class="left">
+        <div class="spot tr"></div>
+        <h2 class="h-display">いろはデジタル倶楽部<br/>について</h2>
+      </div>
+      <div class="right">
+        <div class="lead">
+          「デジタルって難しそう…」そう感じながらも、心のどこかで「<span class="accent">自分の力でどうにかしたい</span>」── そう思ったことはありませんか？
+        </div>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-art reveal">
+        <div class="placeholder">
+          <div class="ph-icon">—</div>
+          <div class="ph-note">About 画像をここに配置</div>
+        </div>
+      </div>
+      <div class="about-body reveal">
+        <p>
+          ここは、同じ気持ちを持つ仲間が集まり、一緒に学び、一緒に解決し、一緒に喜びを分かち合える居場所です。
+        </p>
+        <div class="pull">
+          最新のAI・デジタルツールを使って、<br/>
+          仲間と一緒にデジタルでお仕事をラクにする。
+        </div>
+        <p>
+          講師2名体制で、初めての方にも寄り添ってサポート。
+          課題なし・自分のペースで、楽しく続けられる場所をご用意しています。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUES ============ -->
+<section class="block tint" id="values" data-screen-label="values">
+  <div class="container">
+    <div class="section-head">
+      <div class="left">
+        <h2 class="h-display">大切にしていること</h2>
+      </div>
+      <div class="right">
+        <div class="lead">
+          倶楽部で大切にしているのは、<span class="accent">知識ではなく姿勢</span>です。学び、作り、つなぐ。この三つを軸に、毎週木曜の80分を一緒に過ごします。
+        </div>
+      </div>
+    </div>
+    <div class="values-grid reveal">
+      <div class="value">
+        <div class="no">01</div>
+        <h3 style="margin-top: 12px;">調べる</h3>
+        <p>自分で調べて、問題を解決する力を身につけるためのサポートをいたします。</p>
+      </div>
+      <div class="value">
+        <div class="no">02</div>
+        <h3 style="margin-top: 12px;">作る</h3>
+        <p>チラシ作成やSNS発信、管理表の作成など実際の自分の力で、作成していきます。</p>
+      </div>
+      <div class="value">
+        <div class="no">03</div>
+        <h3 style="margin-top: 12px;">残す</h3>
+        <p>自分で作ったものを、ちゃんと整理して残し、他のスタッフに任せられるようにしていきます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CURRICULUM ============ -->
+<section class="block" id="curriculum" data-screen-label="curriculum">
+  <div class="container">
+    <div class="section-head">
+      <div class="left">
+        <div class="eyebrow">学べること</div>
+        <h2 class="h-display">倶楽部で<br/>学べること</h2>
+      </div>
+      <div class="right lead">
+        毎週木曜の80分で、チラシ作成から事務の自動化まで。「いま使える実務スキル」を、一緒に手を動かしながら身につけていきます。
+      </div>
+    </div>
+    <div class="curr">
+      <div class="curr-nav" id="curr-tab-nav">
+        <button class="active" data-tab="0">
+          集客チラシ作成
+        </button>
+        <button data-tab="1">
+          事務・経理の効率化
+        </button>
+        <button data-tab="2">
+          SNS・Web発信
+        </button>
+      </div>
+
+      <!-- PANEL 0 -->
+      <div class="curr-panel reveal active" id="curr-panel-0">
+        <h3>集客チラシ作成</h3>
+        <div class="panel-en">(メリット: 業者要らずでコスト削減、自分好みにスピード作成)</div>
+        <ul class="curr-list">
+          <li>
+            <span class="marker">— 01</span>
+            <span>Canvaを使ったプロ顔負けのチラシ・POPデザイン</span>
+          </li>
+          <li>
+            <span class="marker">— 02</span>
+            <span>生成AIを活用した、お客さんの目を引くキャッチコピーの自動作成</span>
+          </li>
+          <li>
+            <span class="marker">— 03</span>
+            <span>QRコードを綺麗に埋め込んだ印刷用データの書き出し</span>
+          </li>
+          <li>
+            <span class="marker">— 04</span>
+            <span>スマホで撮影した写真の加工・背景切り抜きテクニック</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- PANEL 1 -->
+      <div class="curr-panel reveal" id="curr-panel-1" style="display: none;">
+        <h3>事務・経理の効率化</h3>
+        <div class="panel-en">(メリット: 面倒な事務を自動化して、本業に集中する時間を生む)</div>
+        <ul class="curr-list">
+          <li>
+            <span class="marker">— 01</span>
+            <span>Googleスプレッドシートによる顧客名簿・売上集計のスマート管理</span>
+          </li>
+          <li>
+            <span class="marker">— 02</span>
+            <span>Googleカレンダーでの予定管理と、仲間・家族との自動共有設定</span>
+          </li>
+          <li>
+            <span class="marker">— 03</span>
+            <span>クラウド（Googleドライブ）を使った書類データの安全な保管と共有方法</span>
+          </li>
+          <li>
+            <span class="marker">— 04</span>
+            <span>AIによる面倒な挨拶文やお知らせ文、返信メールの自動アシスト</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- PANEL 2 -->
+      <div class="curr-panel reveal" id="curr-panel-2" style="display: none;">
+        <h3>SNS・Web発信</h3>
+        <div class="panel-en">(メリット: お金をかけずに新しいお客さんと繋がり、ファンを増やす)</div>
+        <ul class="curr-list">
+          <li>
+            <span class="marker">— 01</span>
+            <span>InstagramやFacebookでお店の魅力を自然に伝える発信術</span>
+          </li>
+          <li>
+            <span class="marker">— 02</span>
+            <span>LINE公式アカウントを使ったリピーター獲得とメッセージ配信</span>
+          </li>
+          <li>
+            <span class="marker">— 03</span>
+            <span>Googleマップ（MEO）でお店を見つけてもらうための登録・運用</span>
+          </li>
+          <li>
+            <span class="marker">— 04</span>
+            <span>プログラミング不要でお店の簡易ホームページ・ブログを作る方法</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKS ============ -->
+<section class="block warm" id="works" data-screen-label="works">
+  <div class="container">
+    <div class="section-head">
+      <div class="left">
+        <h2 class="h-display">仲間がいれば、<br/>こんなことができます</h2>
+      </div>
+      <div class="right lead">
+        倶楽部で取り組むのは、単なるお勉強ではなく、実際のお仕事をラクにする実務です。その一例をご紹介します。
+      </div>
+    </div>
+    <div class="works-grid">
+      <article class="work reveal">
+        <div class="work-art">
+          <div class="placeholder">
+            <div class="ph-icon">—</div>
+            <div class="ph-note">作品画像 01</div>
+          </div>
+          <div class="corner">No.01</div>
+        </div>
+        <div class="work-meta">
+          <div class="cat">— 集客チラシ作成</div>
+          <h4>ご近所で大評判の店舗POPやイベント案内チラシ</h4>
+          <p>Canvaと生成AIを活用し、ご自身の手で作成。毎月の季節の案内も低コストで素早くデザインできるようになります。</p>
+        </div>
+      </article>
+      <article class="work reveal">
+        <div class="work-art">
+          <div class="placeholder">
+            <div class="ph-icon">—</div>
+            <div class="ph-note">作品画像 02</div>
+          </div>
+          <div class="corner">No.02</div>
+        </div>
+        <div class="work-meta">
+          <div class="cat">— 事務・経理の効率化</div>
+          <h4>Googleフォームを使った問い合わせ・予約の24時間自動受付</h4>
+          <p>電話対応の手間をゼロに。お客様からの予約やお問い合わせをクラウド上で自動で整理・管理する仕組みを作ります。</p>
+        </div>
+      </article>
+      <article class="work reveal">
+        <div class="work-art">
+          <div class="placeholder">
+            <div class="ph-icon">—</div>
+            <div class="ph-note">作品画像 03</div>
+          </div>
+          <div class="corner">No.03</div>
+        </div>
+        <div class="work-meta">
+          <div class="cat">— SNS・Web発信</div>
+          <h4>Googleマップ登録とお金をかけないSNS集客</h4>
+          <p>近慢の検索でお店を上位表示させる設定を行い、お金をかけずにお客様と繋がれるデジタルの基礎を仲間と整えます。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AUDIENCE ============ -->
+<section class="block" id="audience" data-screen-label="audience">
+  <div class="container">
+    <div class="section-head">
+      <div class="left">
+        <h2 class="h-display">こんな方を<br/>お待ちしています</h2>
+      </div>
+      <div class="right lead">
+        参加者の多くは50〜70代。一人でお店や会社を切り盛りし、デジタルで仕事を効率化してラクになりたい仲間が集まっています。
+      </div>
+    </div>
+    <div class="audience-grid reveal">
+      <div class="audience-card">
+        <div class="no">01</div>
+        <p>小さなお店や会社を経営し、一人で告知や事務をこなしている方</p>
+      </div>
+      <div class="audience-card">
+        <div class="no">02</div>
+        <p>パソコン操作でつまずいても、周りに聞ける人がいない方</p>
+      </div>
+      <div class="audience-card">
+        <div class="no">03</div>
+        <p>業者に頼まず、自分でお店のチラシやSNS発信をしてみたい方</p>
+      </div>
+      <div class="audience-card">
+        <div class="no">04</div>
+        <p>同じように一人で頑張る同世代の仲間と、情報交換をしたい方</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCHEDULE ============ -->
+<section class="block tint" id="schedule" data-screen-label="schedule">
+  <div class="container">
+    <div class="section-head">
+      <div class="left">
+        <h2 class="h-display">開催スケジュール</h2>
+      </div>
+      <div class="right lead">
+        那覇新都心公園のすぐ近く。駐車場は会場無料でご利用いただけます。
+      </div>
+    </div>
+    <div class="sched-grid">
+      <div class="sched-info reveal">
+        <div>
+          <div class="key">開催日</div>
+          <div class="val">毎週木曜日<small>月4回 開催</small></div>
+        </div>
+        <div>
+          <div class="key">時間</div>
+          <div class="val">13:30 — 14:50<small>80分 / 回</small></div>
+        </div>
+        <div>
+          <div class="key">定員</div>
+          <div class="val">最大 6 名<small>少人数制</small></div>
+        </div>
+        <div>
+          <div class="key">会場</div>
+          <div class="val">なは市民協働プラザ 1F<small>メカルガーデン会議室</small></div>
+        </div>
+      </div>
+      <div class="sched-art reveal">
+        <div class="placeholder">
+          <div class="ph-icon">—</div>
+          <div class="ph-note">会場画像をここに配置</div>
+        </div>
+        <div class="corner-tag">那覇市民プラザ · 1F</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTRUCTOR ============ -->
+<section class="block" id="instructor" data-screen-label="instructor">
+  <div class="container">
+    <div class="section-head">
+      <div class="left">
+        <h2 class="h-display">講師紹介</h2>
+      </div>
+      <div class="right lead">
+        7年間、沖縄の「お仕事の困った」を解決してきたパソコン教室ひふみ。倶楽部では2名体制でサポートします。
+      </div>
+    </div>
+    <div class="inst-grid">
+      <div class="inst-portrait reveal">
+        <div class="placeholder">
+          <div class="ph-icon">—</div>
+          <div class="ph-note">講師画像をここに配置</div>
+        </div>
+        <div class="name-overlay">
+          <div class="role">— いろは応援隊</div>
+          <div class="name">いろは応援隊</div>
+        </div>
+      </div>
+      <div class="inst-text reveal">
+        <h3>パソコン教室ひふみ <br/>いろは応援隊</h3>
+        <p>
+          7年間で延べ3,500人以上のパソコンのお困りごとを解決してきました。お仕事の書類作成からデジタルの効率化まで、一人で頑張る事業者様の頼れるパートナーとして活動を続けています。
+        </p>
+        <p>
+          倶楽部では<strong>講師2名体制</strong>でサポート。Canvaや生成AIを使ったチラシ・地域サイト・ウェブアプリの作り方を、実際の仕事での活用事例を交えながら、一緒に寄り添ってお伝えします。
+        </p>
+        <div class="inst-credits">
+          <div class="caption">— 実績と活動</div>
+          <ul>
+            <li>沖縄県警ボランティア</li>
+            <li>FMレキオ出演</li>
+            <li>那覇市IT創造館講師</li>
+            <li>ネット詐欺対策講座</li>
+            <li>高校生向け情報モラル授業</li>
+            <li>離島スマホ講習会</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="block warm" id="pricing" data-screen-label="pricing">
+  <div class="container">
+    <div class="price-wrap">
+      <div class="price-intro">
+        <h2 class="h-display" style="margin: 16px 0 28px;">料金のご案内</h2>
+        <p>
+          「通い続けたい」と思える場所かどうか、<br/>
+          まず<strong style="color:var(--accent)">無料体験</strong>で確かめてください。<br/><br/>
+          月謝制なので、入会後もいつでもご都合に合わせてお辞めいただけます。
+        </p>
+      </div>
+      <div class="price-card reveal">
+        <div class="badge-wrap">
+          <div class="badge">月謝プラン</div>
+          <div class="badge alt">体験無料</div>
+        </div>
+        <h3>いろはデジタル倶楽部</h3>
+        <div class="price-amount">
+          <span class="yen">¥</span>
+          <span class="num">22,000</span>
+          <span class="per">/ 月謝</span>
+        </div>
+        <div class="meta">税込 · 月4回 レッスン</div>
+        <ul>
+          <li><span class="check">✓</span><span>毎週木曜 13:30〜14:50（80分）</span></li>
+          <li><span class="check">✓</span><span>少人数制（最大6名）で質問しやすい環境</span></li>
+          <li><span class="check">✓</span><span>課題なし・自分のペースで進められる</span></li>
+          <li><span class="check">✓</span><span>最新AI・デジタルツールの活用法を共有</span></li>
+          <li><span class="check">✓</span><span>ウェブサイト・アプリ制作を一緒に体験</span></li>
+          <li><span class="check">✓</span><span>セキュリティ・ネット詐欺対策もサポート</span></li>
+          <li><span class="check">✓</span><span>支払：現金・銀行振込・クレジット対応</span></li>
+        </ul>
+        <div class="guarantee">
+          <div class="seal">保</div>
+          <div>ご満足いただけない場合は<strong>全額返金</strong>いたします。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FLOW ============ -->
+<section class="block" id="flow" data-screen-label="flow">
+  <div class="container">
+    <div class="section-head">
+      <div class="left">
+        <h2 class="h-display">無料体験までの流れ</h2>
+      </div>
+      <div class="right lead">
+        一歩踏み出した日が、お悩みを解決して本業に集中できる始まりの日です。お気軽にご連絡ください。
+      </div>
+    </div>
+    <div class="flow-grid reveal">
+      <div class="flow-step">
+        <div class="circle">01</div>
+        <h4>お問い合わせ</h4>
+        <p>お電話・LINE・メールにてお気軽にご連絡ください。時間外でも留守番電話で承ります（当日中に折り返します）。</p>
+      </div>
+      <div class="flow-step">
+        <div class="circle">02</div>
+        <h4>日程の調整</h4>
+        <p>ご希望の日程をお伝えください。毎週木曜日の開催ですので、参加しやすい日をご一緒に確認します。</p>
+      </div>
+      <div class="flow-step">
+        <div class="circle">03</div>
+        <h4>無料体験</h4>
+        <p>まずは無料体験にご参加ください。実際の温かい雰囲気を体感していただいた上で、ご入会をご検討いただけます。</p>
+      </div>
+      <div class="flow-step">
+        <div class="circle">04</div>
+        <h4>入会・スタート</h4>
+        <p>ご納得いただけたらご入会。月謝制なのでいつでも始められます。同じ悩みを持つ仲間と一緒に、ラクになりましょう。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="block tint" id="faq" data-screen-label="faq">
+  <div class="container">
+    <div class="section-head">
+      <div class="left">
+        <h2 class="h-display">よくあるご質問</h2>
+      </div>
+      <div class="right lead">
+        こちらに載っていないご質問も、お気軽にお問い合わせください。
+      </div>
+    </div>
+    <div class="faq-wrap" id="faq-accordion-group">
+      
+      <div class="faq-item open">
+        <button class="faq-q" data-index="0">
+          <span class="qmark">Q</span>
+          <span class="text">パソコンが苦手でも大丈夫ですか？</span>
+          <span class="toggle"></span>
+        </button>
+        <div class="faq-a">
+          <div>
+            <p>はい、まったく問題ありません。参加されているシニア事業主様の多くが「一人で悩んでいた」「パソコンが本当に苦手だった」という状態からスタートしています。講師2名体制でお一人おひとりに寄り添いますので、分からないことはその場で何度でも聞いていただけます。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-index="1">
+          <span class="qmark">Q</span>
+          <span class="text">月の途中から参加できますか？</span>
+          <span class="toggle"></span>
+        </button>
+        <div class="faq-a">
+          <div>
+            <p>はい、毎週木曜日に無料体験を実施していますので、いつでもお気軽にご参加いただけます。入会後は翌月からの月謝制となります。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-index="2">
+          <span class="qmark">Q</span>
+          <span class="text">課題や宿題はありますか？</span>
+          <span class="toggle"></span>
+        </button>
+        <div class="faq-a">
+          <div>
+            <p>一切ありません。日々の本業やお仕事でお忙しいシニア事業主様だからこそ、ご自身のペースで進めていただくことを大切にしています。「やってみたい」お仕事の課題を持ち込んでいただき、その場で一緒に解決して持ち帰っていただけます。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-index="3">
+          <span class="qmark">Q</span>
+          <span class="text">どんな年齢の方が参加していますか？</span>
+          <span class="toggle"></span>
+        </button>
+        <div class="faq-a">
+          <div>
+            <p>50〜70代の方が中心です。一人でお店や会社を経営されているオーナー様や、定年後に個人での活動を始められた事業主様など、同じ「一人で頑張る境遇」の仲間が集まっています。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-index="4">
+          <span class="qmark">Q</span>
+          <span class="text">途中でやめることはできますか？</span>
+          <span class="toggle"></span>
+        </button>
+        <div class="faq-a">
+          <div>
+            <p>月謝制ですので、いつでもご都合に合わせてお辞めいただけます。また、ご満足いただけなかった場合は全額返金の「完全納得制度」もございます。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-index="5">
+          <span class="qmark">Q</span>
+          <span class="text">一人で参加しても大丈夫ですか？</span>
+          <span class="toggle"></span>
+        </button>
+        <div class="faq-a">
+          <div>
+            <p>はい、参加者のほとんどがお一人での参加です。最大6名の少人数なので、初回からすぐに「同じ悩みを持つ仲間」として自然に打ち解けられる温かい雰囲気です。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-index="6">
+          <span class="qmark">Q</span>
+          <span class="text">パソコンやタブレットは必要ですか？</span>
+          <span class="toggle"></span>
+        </button>
+        <div class="faq-a">
+          <div>
+            <p>お仕事用にお持ちであればぜひご持参ください。まだお持ちでない方や、買い替えに迷っている方は、まずは見学だけでも大歓迎です。必要な機材の選定についても親身にご相談に乗ります。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact" data-screen-label="contact">
+  <div class="contact-card">
+    <h2>一緒に、デジタルでお仕事を<br/><em>もっとラクに</em>しませんか。</h2>
+    <p class="lead">
+      まずは無料体験から。<br/>
+      「もう一人で抱え込まない」始まりを、お待ちしています。
+    </p>
+    <a href="#" class="btn btn-sun">無料体験を申し込む <span class="arr">→</span></a>
+    <div class="channels">
+      <a class="channel" href="tel:0989600866">
+        <div class="icon">℡</div>
+        <div class="label">電話</div>
+        <div class="value">098-960-0866</div>
+      </a>
+      <a class="channel" href="#">
+        <div class="icon">L</div>
+        <div class="label">LINE</div>
+        <div class="value">@iroha-digital</div>
+      </a>
+      <a class="channel" href="mailto:info@example.com">
+        <div class="icon">✉</div>
+        <div class="label">メール</div>
+        <div class="value">お問い合わせ</div>
+      </a>
+    </div>
+    <div class="signoff">
+      担当：<strong>仲宗根</strong> ／ 時間外は留守番電話にてお受けします（当日中に折り返します）
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:24px;">
+        <div style="width:52px; height:52px;">
+          <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="26" cy="26" r="24" fill="#e9b94c"/>
+            <path d="M14 32 Q20 22 26 28 T38 22" stroke="#1f1d1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <circle cx="38" cy="20" r="2.5" fill="#1f1d1a"/>
+            <text x="26" y="44" text-anchor="middle" font-family="serif" font-size="9" font-weight="700" fill="#1f1d1a" letter-spacing="0.5">いろは</text>
+          </svg>
+        </div>
+        <div>
+          <div style="font-family:var(--serif); color:var(--paper); font-size:17px; letter-spacing:0.08em; font-weight:700;">いろはデジタル倶楽部</div>
+        </div>
+      </div>
+      <p style="font-size:13px; line-height:1.95; margin:0; color:rgba(253,249,240,0.6)">
+        沖縄県那覇市｜なは市民協働プラザ 1F<br/>
+        メカルガーデン会議室<br/>
+        運営：パソコン教室ひふみ
+      </p>
+    </div>
+    <div>
+      <h5>サイトマップ</h5>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#values">Values</a></li>
+        <li><a href="#curriculum">Curriculum</a></li>
+        <li><a href="#works">Works</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>ご案内</h5>
+      <ul>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#flow">How to Join</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>連絡先</h5>
+      <ul>
+        <li>098-960-0866</li>
+        <li>LINE / メール</li>
+        <li>担当：仲宗根</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bar">
+    <div>© 2026 Iroha Digital Club · Pasokon School Hifumi</div>
+    <div class="marks">
+      <span>プライバシーポリシー</span>
+      <span>·</span>
+      <span>利用規約</span>
+      <span>·</span>
+      <span>サイトマップ</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ VANILLA JS INTERACTION ============ -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  
+  // 1. スクロール時のナビゲーションバーデザイン制御
+  const mainNav = document.getElementById('main-nav');
+  if (mainNav) {
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        mainNav.classList.add('scrolled');
+      } else {
+        mainNav.classList.remove('scrolled');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+  }
+
+  // 2. カリキュラム部分のタブ切り替え制御
+  const tabButtons = document.querySelectorAll('#curr-tab-nav button');
+  tabButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const targetIndex = this.getAttribute('data-tab');
+      
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+
+      const panels = document.querySelectorAll('.curr-panel');
+      panels.forEach(panel => {
+        panel.classList.remove('active');
+        panel.style.display = 'none';
+      });
+
+      const targetPanel = document.getElementById(`curr-panel-${targetIndex}`);
+      if (targetPanel) {
+        targetPanel.style.display = 'block';
+        setTimeout(() => {
+          targetPanel.classList.add('active');
+        }, 20);
+      }
+    });
+  });
+
+  // 3. よくあるご質問 (FAQ) のアコーディオン制御
+  const faqQuestions = document.querySelectorAll('#faq-accordion-group .faq-q');
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', function() {
+      const parentItem = this.closest('.faq-item');
+      const isOpen = parentItem.classList.contains('open');
+
+      document.querySelectorAll('#faq-accordion-group .faq-item').forEach(item => {
+        item.classList.remove('open');
+      });
+
+      if (!isOpen) {
+        parentItem.classList.add('open');
+      }
+    });
+  });
+
+  // 4. スクロール連動フェードインアニメーション (IntersectionObserver)
+  const revealElements = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+        }
+      });
+    }, {
+      threshold: 0.12
+    });
+    revealElements.forEach(el => io.observe(el));
+  } else {
+    revealElements.forEach(el => el.classList.add('in'));
+  }
+
+  // 5. ナビゲーションドロワーの開閉・アンカースムーススクロール制御
+  const menuToggle = document.getElementById('menu-toggle');
+  const navDrawer = document.getElementById('nav-drawer');
+  const navDrawerOverlay = document.getElementById('nav-drawer-overlay');
+  const navDrawerClose = document.getElementById('nav-drawer-close');
+  const drawerLinks = document.querySelectorAll('.nav-drawer-links a, .nav-drawer-content .btn');
+
+  const openDrawer = () => {
+    navDrawer.classList.add('open');
+    menuToggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden'; // 背後のスクロールを防止
+  };
+
+  const closeDrawer = () => {
+    navDrawer.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+
+  if (menuToggle) menuToggle.addEventListener('click', openDrawer);
+  if (navDrawerOverlay) navDrawerOverlay.addEventListener('click', closeDrawer);
+  if (navDrawerClose) navDrawerClose.addEventListener('click', closeDrawer);
+
+  drawerLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      closeDrawer();
+      
+      const targetId = link.getAttribute('href');
+      if (targetId && targetId.startsWith('#')) {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          
+          // 固定ヘッダーの高さ分をオフセット調整してスムーズスクロール
+          const headerOffset = 90;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+  });
+
+});
+</script>
+
+</body>
+</html>
