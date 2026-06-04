@@ -902,6 +902,24 @@ section.block.warm { background: var(--paper-tint); }
   .price-wrap { margin-top: 36px; }
   .price-card { padding: 40px 28px; }
 }
+@media (max-width: 480px) {
+  .price-card {
+    padding: 32px 18px !important;
+  }
+  .price-card .badge-wrap {
+    left: 18px !important;
+  }
+  .price-card h3 {
+    font-size: 21px !important;
+    margin: 12px 0 20px !important;
+  }
+  .price-amount .num {
+    font-size: 52px !important;
+  }
+  .price-amount .yen {
+    font-size: 20px !important;
+  }
+}
 
 /* ===================== FLOW ===================== */
 .flow-grid {
