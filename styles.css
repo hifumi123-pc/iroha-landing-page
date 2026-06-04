@@ -962,15 +962,31 @@ section.block.warm { background: var(--paper-tint); }
 }
 .faq-item.open { box-shadow: 0 10px 28px -14px rgba(31,29,26,0.2); }
 .faq-q {
-  width: 100%; background: none; border: none; cursor: pointer; padding: 22px 28px;
+  width: 100%; background: none !important; border: none; cursor: pointer; padding: 22px 28px;
   display: grid; grid-template-columns: 36px 1fr 32px; gap: 18px;
   align-items: center; text-align: left;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.faq-q:hover,
+.faq-q:focus,
+.faq-q:active,
+.faq-item.open .faq-q {
+  background: none !important;
+  color: inherit !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 .faq-q .qmark {
   font-family: var(--serif); font-weight: 700; font-size: 24px;
   color: var(--sky-deep);
 }
-.faq-q .text { font-size: 17px; letter-spacing: 0.04em; font-weight: 700; line-height: 1.6; color: var(--ink); }
+.faq-q .text {
+  font-size: 17px; letter-spacing: 0.04em; font-weight: 700; line-height: 1.6; color: var(--ink);
+  white-space: normal !important;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
 .faq-q .toggle {
   width: 32px; height: 32px;
   border-radius: 50%;
@@ -1249,4 +1265,26 @@ button.nav-pill {
   color: #fff;
   transform: translateX(4px);
 }
+
+/* モバイル対応：よくあるご質問 (FAQ) の文字はみ出しとパディング調整 */
+@media (max-width: 480px) {
+  .faq-q {
+    padding: 16px 20px !important;
+    gap: 12px !important;
+    grid-template-columns: 24px 1fr 24px !important;
+  }
+  .faq-q .qmark {
+    font-size: 20px !important;
+  }
+  .faq-q .text {
+    font-size: 15px !important;
+  }
+  .faq-q .toggle {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .faq-q .toggle::before { width: 10px !important; }
+  .faq-q .toggle::after { height: 10px !important; }
+}
+
 
