@@ -1245,6 +1245,19 @@ body.theme-asagi  { --sky: #6da8c4; --sky-deep: #3a6a8a; --sun: #d4b870; --leaf:
     height: 1.5px !important;
     background: #1f1d1a !important;
   }
+  /* スケジュール情報のスマホ最適化 */
+  .sched-info {
+    grid-template-columns: 1fr !important;
+    padding: 16px 8px !important;
+  }
+  .sched-info > div {
+    padding: 24px 20px !important;
+    border-bottom: 1px dashed var(--line) !important;
+    border-right: none !important;
+  }
+  .sched-info > div:last-child {
+    border-bottom: none !important;
+  }
 }
 
 /* ===================== NAVIGATION DRAWER CSS ===================== */
