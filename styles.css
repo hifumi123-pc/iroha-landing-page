@@ -119,26 +119,29 @@ button { font: inherit; color: inherit; }
 .nav-right { display: flex; align-items: center; gap: 14px; }
 
 .nav-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 24px;
-  background: #fff;
-  border-radius: 999px;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  box-shadow: 0 2px 0 rgba(0,0,0,0.08);
-  transition: transform .2s, background .2s;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 11px 22px !important;
+  background: #fff !important;
+  color: #1f1d1a !important;
+  border-radius: 999px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.08) !important;
+  transition: transform .2s, background .2s !important;
+  border: none !important;
+  line-height: 1 !important;
 }
-.nav-pill:hover { transform: translateY(-2px); }
+.nav-pill:hover { transform: translateY(-2px) !important; }
 .nav-pill.primary { background: var(--sky-deep); color: #fff; }
 .nav-pill.primary:hover { background: var(--ink); }
 .nav-pill .ico { display: inline-flex !important; flex-direction: column !important; gap: 3px !important; }
 .nav-pill .ico span {
   width: 16px !important;
   height: 1.5px !important;
-  background: var(--ink) !important;
+  background: #1f1d1a !important;
   display: block !important;
   border-radius: 2px !important;
 }
@@ -1217,12 +1220,30 @@ body.theme-asagi  { --sky: #6da8c4; --sky-deep: #3a6a8a; --sun: #d4b870; --leaf:
 
 /* ============ レスポンシブ メディアクエリの調整 ============ */
 @media (max-width: 760px) {
-  /* スマホ版のとき「メニュー」の文字を非表示にして「三」アイコンのみにする */
+  .nav {
+    padding: 14px 16px !important;
+  }
+  .nav .brand-text h1.ja {
+    font-size: 16px !important;
+    letter-spacing: 0.04em !important;
+  }
   .nav-menu-text {
-    display: none;
+    display: inline-block !important;
+    font-size: 13px !important;
+    color: #1f1d1a !important;
   }
   .nav-pill {
-    padding: 14px 18px; /* アイコンのみのため左右余白を少し詰める */
+    padding: 8px 12px !important;
+    gap: 8px !important;
+    background: #fff !important;
+    color: #1f1d1a !important;
+    line-height: 1 !important;
+    min-height: auto !important;
+  }
+  .nav-pill .ico span {
+    width: 14px !important;
+    height: 1.5px !important;
+    background: #1f1d1a !important;
   }
 }
 
