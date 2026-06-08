@@ -1252,8 +1252,11 @@ html {
   scroll-behavior: smooth;
 }
 button.nav-pill {
-  border: none;
-  cursor: pointer;
+  border: none !important;
+  cursor: pointer !important;
+  background: #fff !important;
+  color: #1f1d1a !important;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.08) !important;
 }
 .nav-drawer {
   position: fixed;
@@ -1302,15 +1305,15 @@ button.nav-pill {
   right: 20px;
   width: 44px;
   height: 44px;
-  background: var(--paper-soft);
-  border: none;
-  border-radius: 50%;
-  font-size: 24px;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  color: var(--ink);
-  transition: background .2s, transform .2s;
+  background: var(--paper-soft) !important;
+  border: none !important;
+  border-radius: 50% !important;
+  font-size: 24px !important;
+  display: grid !important;
+  place-items: center !important;
+  cursor: pointer !important;
+  color: #1f1d1a !important;
+  transition: background .2s, transform .2s !important;
 }
 .nav-drawer-close:hover {
   background: var(--line);
