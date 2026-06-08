@@ -1106,50 +1106,70 @@ section.block.warm { background: var(--paper-tint); }
   display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;
   max-width: 840px; margin-inline: auto;
 }
-.channel {
-  background: var(--paper);
-  padding: 24px 14px;
-  border-radius: 20px;
-  display: flex; flex-direction: column; gap: 10px; align-items: center;
-  transition: transform .2s, background .2s;
-  min-width: 0;
-  box-sizing: border-box;
+.iroha-lp-wrapper .contact-card .channels a.channel {
+  background: var(--paper) !important;
+  padding: 24px 14px !important;
+  border-radius: 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  align-items: center !important;
+  transition: transform .2s, background .2s !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
-.channel:hover { transform: translateY(-3px); background: var(--paper-soft); }
-.channel .icon {
-  width: 48px; height: 48px;
-  border-radius: 50%;
-  background: var(--sun);
-  color: var(--ink);
-  font-family: var(--serif); font-weight: 700; font-size: 18px;
-  display: grid; place-items: center;
+.iroha-lp-wrapper .contact-card .channels a.channel:hover {
+  transform: translateY(-3px) !important;
+  background: var(--paper-soft) !important;
 }
-.channel:nth-child(2) .icon { background: var(--leaf); }
-.channel:nth-child(3) .icon { background: var(--coral); color: #fff; }
-.channel .label {
-  font-family: var(--sans); font-size: 14px; color: var(--sky-deep);
-  font-weight: 700;
+.iroha-lp-wrapper .contact-card .channels a.channel .icon {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+  background: var(--sun) !important;
+  color: var(--ink) !important;
+  font-family: var(--serif) !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  display: grid !important;
+  place-items: center !important;
 }
-.channel .channel-value {
-  font-family: var(--sans);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.45;
-  letter-spacing: 0.02em;
-  color: var(--ink);
-  background: #fff;
-  border-radius: 12px;
-  padding: 14px 8px;
-  width: 100%;
-  text-align: center;
-  word-break: break-all;
-  overflow-wrap: anywhere;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
-  min-height: 68px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
+.iroha-lp-wrapper .contact-card .channels a.channel:nth-child(2) .icon {
+  background: var(--leaf) !important;
+}
+.iroha-lp-wrapper .contact-card .channels a.channel:nth-child(3) .icon {
+  background: var(--coral) !important;
+  color: #fff !important;
+}
+.iroha-lp-wrapper .contact-card .channels a.channel .label {
+  font-family: var(--sans) !important;
+  font-size: 14px !important;
+  color: var(--sky-deep) !important;
+  font-weight: 700 !important;
+}
+.iroha-lp-wrapper .contact-card .channels a.channel .channel-value {
+  font-family: var(--sans) !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+  letter-spacing: 0.02em !important;
+  color: var(--ink) !important;
+  background: #fff !important;
+  border-radius: 12px !important;
+  padding: 14px 8px !important;
+  width: 100% !important;
+  text-align: center !important;
+  word-break: break-all !important;
+  overflow-wrap: anywhere !important;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.03) !important;
+  min-height: 68px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
 }
 .contact-card .signoff {
   margin-top: 48px;
@@ -1157,19 +1177,19 @@ section.block.warm { background: var(--paper-tint); }
 }
 .contact-card .signoff strong { color: var(--ink); font-weight: 700; }
 @media (max-width: 720px) {
-  .contact {
+  .iroha-lp-wrapper .contact {
     padding: 60px 16px !important;
   }
-  .contact-card {
+  .iroha-lp-wrapper .contact-card {
     padding: 36px 16px !important;
     border-radius: 24px !important;
   }
-  .contact-card .channels {
-    grid-template-columns: 1fr;
+  .iroha-lp-wrapper .contact-card .channels {
+    grid-template-columns: 1fr !important;
     gap: 12px !important;
     margin-top: 36px !important;
   }
-  .contact-card .lead {
+  .iroha-lp-wrapper .contact-card .lead {
     margin-bottom: 24px !important;
   }
 }
