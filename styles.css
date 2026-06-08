@@ -1145,6 +1145,7 @@ section.block.warm { background: var(--paper-tint); }
   color: #fff !important;
 }
 .iroha-lp-wrapper .contact-card .channels a.channel .label {
+  display: block !important;
   font-family: var(--sans) !important;
   font-size: 14px !important;
   color: var(--sky-deep) !important;
