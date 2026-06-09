@@ -720,21 +720,41 @@ section.block.warm { background: var(--paper-tint); }
   padding: 30px 32px;
   border-bottom: 1px dashed var(--line);
 }
-.sched-info > div:nth-child(odd) { border-right: 1px dashed var(--line); }
-.sched-info > div:nth-last-child(-n+2) { border-bottom: none; }
+.sched-info > div:nth-child(odd):not(.sched-venue-cell) { border-right: 1px dashed var(--line); }
+.sched-info > div:nth-last-child(-n+2):not(.sched-venue-cell) { border-bottom: none; }
+/* 会場セルは2列分の全幅に広げる */
+.sched-venue-cell {
+  grid-column: 1 / -1;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+.sched-map {
+  margin-top: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px -8px rgba(31,29,26,0.15);
+}
+.sched-map iframe {
+  display: block;
+  width: 100%;
+  height: 220px;
+  border: 0;
+  border-radius: 12px;
+}
 .sched-info .key {
   font-family: var(--sans); font-size: 15px; color: var(--sky-deep);
   margin-bottom: 10px; letter-spacing: 0.06em;
   font-weight: 700;
 }
 .sched-info .val {
-  font-family: var(--serif); font-weight: 700; font-size: 24px;
+  font-family: var(--serif); font-weight: 700; font-size: 22px;
   letter-spacing: 0.05em; line-height: 1.5;
 }
 .sched-info .val small {
   font-size: 14px; color: var(--ink-mute);
   display: block; margin-top: 4px; font-family: var(--sans); font-weight: 400; letter-spacing: 0.02em;
 }
+
 
 .sched-art {
   aspect-ratio: 5/6;
