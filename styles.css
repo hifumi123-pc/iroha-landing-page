@@ -504,34 +504,36 @@ section.block.warm { background: var(--paper-tint); }
 }
 .curr-nav { position: sticky; top: 100px; display: grid; gap: 10px; }
 .curr-nav button {
-  display: block;
-  width: 100%;
-  text-align: left;
-  background: #fff;
-  border: 2px solid transparent;
-  padding: 20px 24px;
-  border-radius: 16px;
-  cursor: pointer;
-  font-size: 16px;
-  color: var(--ink-soft);
-  transition: all .2s;
-  font-family: var(--serif);
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  box-shadow: 0 2px 0 rgba(31,29,26,0.05);
+  display: block !important;
+  width: 100% !important;
+  text-align: left !important;
+  background: #fff !important;
+  border: 2px solid transparent !important;
+  padding: 20px 24px !important;
+  border-radius: 16px !important;
+  cursor: pointer !important;
+  font-size: 16px !important;
+  color: #3a3833 !important;
+  transition: all .2s !important;
+  font-family: var(--serif) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  box-shadow: 0 2px 0 rgba(31,29,26,0.05) !important;
+  line-height: 1.5 !important;
+  box-sizing: border-box !important;
 }
 .curr-nav button .no {
-  font-family: var(--sans); font-size: 13px;
-  display: block; margin-bottom: 4px; color: var(--ink-mute);
-  letter-spacing: 0.08em;
+  font-family: var(--sans) !important; font-size: 13px !important;
+  display: block !important; margin-bottom: 4px !important; color: var(--ink-mute) !important;
+  letter-spacing: 0.08em !important;
 }
-.curr-nav button:hover { transform: translateX(4px); border-color: var(--sky); }
+.curr-nav button:hover { transform: translateX(4px) !important; border-color: var(--sky) !important; }
 .curr-nav button.active {
-  background: var(--sky-deep);
-  color: var(--paper);
-  border-color: var(--sky-deep);
+  background: var(--sky-deep) !important;
+  color: var(--paper) !important;
+  border-color: var(--sky-deep) !important;
 }
-.curr-nav button.active .no { color: var(--sun); }
+.curr-nav button.active .no { color: var(--sun) !important; }
 
 .curr-panel {
   min-height: 460px;
