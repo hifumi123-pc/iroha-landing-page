@@ -497,12 +497,17 @@ section.block.warm { background: var(--paper-tint); }
 
 /* ===================== CURRICULUM ===================== */
 .curr {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 60px;
-  align-items: start;
+  display: grid !important;
+  grid-template-columns: 300px 1fr !important;
+  gap: 60px !important;
+  align-items: start !important;
 }
-.curr-nav { position: sticky; top: 100px; display: grid; gap: 10px; }
+.curr-nav {
+  position: sticky !important;
+  top: 100px !important;
+  display: grid !important;
+  gap: 10px !important;
+}
 .curr-nav button {
   display: block !important;
   width: 100% !important;
@@ -536,11 +541,13 @@ section.block.warm { background: var(--paper-tint); }
 .curr-nav button.active .no { color: var(--sun) !important; }
 
 .curr-panel {
-  min-height: 460px;
-  background: #fff;
-  border-radius: 24px;
-  padding: 48px;
-  box-shadow: 0 8px 24px -14px rgba(31,29,26,0.12);
+  min-height: 460px !important;
+  background: #fff !important;
+  border-radius: 24px !important;
+  padding: 48px !important;
+  box-shadow: 0 8px 24px -14px rgba(31,29,26,0.12) !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
 }
 .curr-panel h3 {
   font-family: var(--serif); font-weight: 700; font-size: 34px;
@@ -552,16 +559,16 @@ section.block.warm { background: var(--paper-tint); }
   margin-bottom: 36px;
   line-height: 1.6;
 }
-.curr-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0; }
+.curr-list { list-style: none !important; padding: 0 !important; margin: 0 !important; display: grid !important; gap: 0 !important; }
 .curr-list li {
-  display: grid;
-  grid-template-columns: 36px 1fr;
-  gap: 20px;
-  padding: 24px 0;
-  border-bottom: 1px dashed var(--line);
-  align-items: center;
-  font-size: 17px;
-  line-height: 1.8;
+  display: grid !important;
+  grid-template-columns: 36px 1fr !important;
+  gap: 20px !important;
+  padding: 24px 0 !important;
+  border-bottom: 1px dashed var(--line) !important;
+  align-items: center !important;
+  font-size: 17px !important;
+  line-height: 1.8 !important;
 }
 .curr-list li:last-child { border-bottom: none; }
 .curr-list li .marker {
@@ -572,13 +579,13 @@ section.block.warm { background: var(--paper-tint); }
 .curr-list li:nth-child(3n) .marker { color: var(--coral); }
 .curr-list li:nth-child(4n) .marker { color: var(--sun); }
 @media (max-width: 900px) {
-  .curr { grid-template-columns: 1fr; gap: 28px; }
+  .curr { grid-template-columns: 1fr !important; gap: 28px !important; }
   .curr-nav {
-    position: static;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    width: 100%;
+    position: static !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+    width: 100% !important;
   }
   .curr-nav button {
     text-align: center;
@@ -599,7 +606,7 @@ section.block.warm { background: var(--paper-tint); }
   .curr-nav button:hover {
     transform: translateY(-2px);
   }
-  .curr-panel { padding: 32px 20px; }
+  .curr-panel { padding: 32px 20px !important; }
 }
 
 /* ===================== WORKS ===================== */
