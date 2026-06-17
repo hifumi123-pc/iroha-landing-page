@@ -262,7 +262,7 @@
         毎週木曜日の80分で、お仕事にすぐ役立つ3つのこと（チラシの作り方、AI業務効率化と事務管理、ホームページやSNSでの発信）を、パソコン初心者の方でもゼロから安心して楽しく学んでいけます。
       </div>
     </div>
-    <div class="curr">
+    <div class="curr" style="display:grid; grid-template-columns:300px 1fr; gap:60px; align-items:start;">
       <div class="curr-nav" id="curr-tab-nav">
         <button class="active" data-tab="0">
           チラシ作成
@@ -812,6 +812,21 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // 2b. .curr のレスポンシブグリッド制御（インラインstyleをモバイルで上書き）
+  const currEl = document.querySelector('.curr');
+  function updateCurrLayout() {
+    if (!currEl) return;
+    if (window.innerWidth <= 900) {
+      currEl.style.gridTemplateColumns = '1fr';
+      currEl.style.gap = '28px';
+    } else {
+      currEl.style.gridTemplateColumns = '300px 1fr';
+      currEl.style.gap = '60px';
+    }
+  }
+  updateCurrLayout();
+  window.addEventListener('resize', updateCurrLayout);
 
   // 3. よくあるご質問 (FAQ) のアコーディオン制御
   const faqQuestions = document.querySelectorAll('#faq-accordion-group .faq-q');
