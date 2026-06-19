@@ -495,119 +495,38 @@ section.block.warm { background: var(--paper-tint); }
   .values-grid { grid-template-columns: 1fr; }
 }
 
-/* ===================== CURRICULUM ===================== */
-.curr {
+/* ===================== CURRICULUM (CARD LIST) ===================== */
+.work-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 16px 0 0 !important;
   display: grid !important;
-  grid-template-columns: 300px 1fr !important;
-  gap: 60px !important;
-  align-items: start !important;
+  gap: 0 !important;
 }
-.curr-nav {
-  position: sticky !important;
-  top: 100px !important;
+.work-list li {
   display: grid !important;
-  gap: 10px !important;
-}
-.curr-nav button {
-  display: block !important;
-  width: 100% !important;
-  text-align: left !important;
-  background: #fff !important;
-  border: 2px solid transparent !important;
-  padding: 20px 24px !important;
-  border-radius: 16px !important;
-  cursor: pointer !important;
-  font-size: 16px !important;
-  color: #3a3833 !important;
-  transition: all .2s !important;
-  font-family: var(--serif) !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.06em !important;
-  box-shadow: 0 2px 0 rgba(31,29,26,0.05) !important;
-  line-height: 1.5 !important;
-  box-sizing: border-box !important;
-}
-.curr-nav button .no {
-  font-family: var(--sans) !important; font-size: 13px !important;
-  display: block !important; margin-bottom: 4px !important; color: var(--ink-mute) !important;
-  letter-spacing: 0.08em !important;
-}
-.curr-nav button:hover { transform: translateX(4px) !important; border-color: var(--sky) !important; }
-.curr-nav button.active {
-  background: var(--sky-deep) !important;
-  color: var(--paper) !important;
-  border-color: var(--sky-deep) !important;
-}
-.curr-nav button.active .no { color: var(--sun) !important; }
-
-.curr-panel {
-  min-height: 460px !important;
-  background: #fff !important;
-  border-radius: 24px !important;
-  padding: 48px !important;
-  box-shadow: 0 8px 24px -14px rgba(31,29,26,0.12) !important;
-  box-sizing: border-box !important;
-  width: 100% !important;
-}
-.curr-panel h3 {
-  font-family: var(--serif); font-weight: 700; font-size: 34px;
-  margin: 0 0 8px; letter-spacing: 0.06em;
-  color: var(--sky-deep);
-}
-.curr-panel .panel-en {
-  font-family: var(--sans); font-size: 16px; color: var(--ink-mute);
-  margin-bottom: 36px;
-  line-height: 1.6;
-}
-.curr-list { list-style: none !important; padding: 0 !important; margin: 0 !important; display: grid !important; gap: 0 !important; }
-.curr-list li {
-  display: grid !important;
-  grid-template-columns: 36px 1fr !important;
-  gap: 20px !important;
-  padding: 24px 0 !important;
+  grid-template-columns: 32px 1fr !important;
+  gap: 12px !important;
+  padding: 12px 0 !important;
   border-bottom: 1px dashed var(--line) !important;
   align-items: center !important;
-  font-size: 17px !important;
-  line-height: 1.8 !important;
+  font-size: 14.5px !important;
+  line-height: 1.6 !important;
+  color: var(--ink-soft) !important;
 }
-.curr-list li:last-child { border-bottom: none; }
-.curr-list li .marker {
-  font-family: var(--hand); font-weight: 700;
-  font-size: 16px; color: var(--sky-deep);
+.work-list li:last-child {
+  border-bottom: none !important;
 }
-.curr-list li:nth-child(2n) .marker { color: var(--leaf); }
-.curr-list li:nth-child(3n) .marker { color: var(--coral); }
-.curr-list li:nth-child(4n) .marker { color: var(--sun); }
-@media (max-width: 900px) {
-  .curr { grid-template-columns: 1fr !important; gap: 28px !important; }
-  .curr-nav {
-    position: static !important;
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 8px !important;
-    width: 100% !important;
-  }
-  .curr-nav button {
-    text-align: center;
-    padding: 10px 4px !important;
-    font-size: 11px !important;
-    line-height: 1.35 !important;
-    border-radius: 10px !important;
-    white-space: normal !important;
-    word-break: break-all !important;
-    overflow-wrap: anywhere !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    min-height: 68px !important;
-    box-sizing: border-box !important;
-  }
-  .curr-nav button:hover {
-    transform: translateY(-2px);
-  }
-  .curr-panel { padding: 32px 20px !important; }
+.work-list li .marker {
+  font-family: var(--hand);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--sky-deep);
 }
+.work-list li:nth-child(2n) .marker { color: var(--leaf); }
+.work-list li:nth-child(3n) .marker { color: var(--coral); }
+.work-list li:nth-child(4n) .marker { color: var(--sun); }
+
 
 /* ===================== WORKS ===================== */
 .works-grid {
@@ -1499,5 +1418,4 @@ button.nav-pill {
   .faq-q .toggle::before { width: 10px !important; }
   .faq-q .toggle::after { height: 10px !important; }
 }
-
 
