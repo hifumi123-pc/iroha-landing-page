@@ -34,7 +34,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "palt";
   line-height: 2.1;
-  font-size: 17px;
+  font-size: 19px;
   letter-spacing: 0.03em;
   overflow-x: hidden;
 }
@@ -47,7 +47,7 @@ button { font: inherit; color: inherit; }
 
 .eyebrow {
   font-family: var(--sans);   /* eyebrowも日本語ベースのsansに変更 */
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 0.08em;
   color: var(--sky-deep);
   font-weight: 700;
@@ -295,7 +295,7 @@ button { font: inherit; color: inherit; }
   letter-spacing: 0.02em;
 }
 .stat .num small { font-size: 0.45em; color: var(--sky-deep); margin-left: 4px; font-weight: 700; }
-.stat .ja { margin-top: 14px; font-size: 15px; color: var(--ink-mute); font-weight: 700; line-height: 1.5; }
+.stat .ja { margin-top: 14px; font-size: 17px; color: var(--ink-mute); font-weight: 700; line-height: 1.5; }
 @media (max-width: 760px) {
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 36px 12px; padding: 48px 20px; }
   .stat + .stat::before { display: none; }
@@ -415,7 +415,7 @@ section.block.warm { background: var(--paper-tint); }
 }
 
 .about-body p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 2.3;
   margin: 0 0 24px;
   color: var(--ink-soft);
@@ -585,11 +585,11 @@ section.block.warm { background: var(--paper-tint); }
   font-weight: 700;
 }
 .work-meta h4 {
-  font-family: var(--serif); font-weight: 700; font-size: 21px;
+  font-family: var(--serif); font-weight: 700; font-size: 24px;
   margin: 0; letter-spacing: 0.05em; line-height: 1.6;
 }
 .work-meta p {
-  margin: 8px 0 0; font-size: 15px; color: var(--ink-soft); line-height: 1.95;
+  margin: 8px 0 0; font-size: 17px; color: var(--ink-soft); line-height: 1.95;
 }
 @media (max-width: 900px) {
   .works-grid { grid-template-columns: 1fr; }
@@ -625,7 +625,7 @@ section.block.warm { background: var(--paper-tint); }
 }
 .audience-card:nth-child(2n) .no { color: var(--coral) !important; }
 .audience-card:nth-child(3n) .no { color: var(--leaf) !important; }
-.audience-card p { margin: 6px 0 0 !important; font-size: 16px !important; line-height: 1.9 !important; color: var(--ink) !important; font-weight: 500 !important; }
+.audience-card p { margin: 6px 0 0 !important; font-size: 18px !important; line-height: 1.9 !important; color: var(--ink) !important; font-weight: 500 !important; }
 @media (max-width: 760px) { .audience-grid { grid-template-columns: 1fr !important; } }
 
 /* ===================== SCHEDULE ===================== */
@@ -747,7 +747,7 @@ section.block.warm { background: var(--paper-tint); }
   font-family: var(--serif); font-size: 28px; color: rgba(31,29,26,0.45);
 }
 .inst-portrait .ph-note {
-  font-family: var(--hand); font-size: 14px; color: rgba(31,29,26,0.55);
+  font-family: var(--hand); font-size: 16px; color: rgba(31,29,26,0.55);
 }
 .inst-portrait .name-overlay {
   position: absolute; bottom: 24px; left: 24px; right: 24px;
@@ -758,32 +758,32 @@ section.block.warm { background: var(--paper-tint); }
 }
 .inst-portrait .name-overlay .role {
   font-family: var(--sans);
-  font-size: 13px;
+  font-size: 15px;
   color: var(--sky-deep);
   letter-spacing: 0.06em;
   font-weight: 700;
 }
 .inst-portrait .name-overlay .name {
-  font-family: var(--serif); font-weight: 700; font-size: 22px;
+  font-family: var(--serif); font-weight: 700; font-size: 24px;
   margin-top: 4px; letter-spacing: 0.06em;
 }
 
 .inst-text h3 {
-  font-family: var(--serif); font-weight: 700; font-size: 30px;
+  font-family: var(--serif); font-weight: 700; font-size: 34px;
   margin: 0 0 12px; letter-spacing: 0.06em; line-height: 1.55;
 }
 .inst-text .loc {
-  font-family: var(--sans); font-size: 16px; color: var(--sky-deep);
+  font-family: var(--sans); font-size: 18px; color: var(--sky-deep);
   margin-bottom: 28px;
 }
-.inst-text p { font-size: 16px; line-height: 2.15; color: var(--ink-soft); margin: 0 0 20px; }
+.inst-text p { font-size: 18px; line-height: 2.15; color: var(--ink-soft); margin: 0 0 20px; }
 .inst-text p strong { color: var(--sky-deep); font-weight: 700; }
 .inst-credits {
   margin-top: 36px; padding-top: 28px;
   border-top: 1px dashed var(--line);
 }
 .inst-credits .caption {
-  font-family: var(--sans); font-size: 15px; color: var(--coral);
+  font-family: var(--sans); font-size: 17px; color: var(--coral);
   margin-bottom: 18px;
   font-weight: 700;
 }
@@ -792,7 +792,7 @@ section.block.warm { background: var(--paper-tint); }
   display: flex; flex-wrap: wrap; gap: 8px;
 }
 .inst-credits li {
-  font-size: 13px;
+  font-size: 15px;
   background: #fff;
   padding: 8px 16px;
   border-radius: 999px;
@@ -984,7 +984,7 @@ section.block.warm { background: var(--paper-tint); }
   color: var(--sky-deep);
 }
 .faq-q .text {
-  font-size: 17px; letter-spacing: 0.04em; font-weight: 700; line-height: 1.6; color: var(--ink);
+  font-size: 19px; letter-spacing: 0.04em; font-weight: 700; line-height: 1.6; color: var(--ink);
   white-space: normal !important;
   word-break: break-all;
   overflow-wrap: anywhere;
@@ -1012,7 +1012,7 @@ section.block.warm { background: var(--paper-tint); }
 .faq-a > div { overflow: hidden; }
 .faq-a p {
   margin: 0 28px 24px 82px;
-  font-size: 15px; line-height: 2.1;
+  font-size: 17px; line-height: 2.1;
   color: var(--ink-soft);
 }
 
@@ -1249,6 +1249,9 @@ body.theme-asagi  { --sky: #6da8c4; --sky-deep: #3a6a8a; --sun: #d4b870; --leaf:
 
 /* ============ レスポンシブ メディアクエリの調整 ============ */
 @media (max-width: 760px) {
+  body {
+    font-size: 16px;
+  }
   .nav {
     padding: 14px 16px !important;
   }
@@ -1417,5 +1420,13 @@ button.nav-pill {
   }
   .faq-q .toggle::before { width: 10px !important; }
   .faq-q .toggle::after { height: 10px !important; }
+}
+
+/* ヘルパークラス：レスポンシブ改行など */
+@media (min-width: 769px) {
+  .sp-only { display: none !important; }
+}
+@media (max-width: 768px) {
+  .pc-only { display: none !important; }
 }
 
