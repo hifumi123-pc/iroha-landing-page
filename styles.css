@@ -597,36 +597,36 @@ section.block.warm { background: var(--paper-tint); }
 
 /* ===================== AUDIENCE ===================== */
 .audience-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 28px !important;
 }
 .audience-card {
-  padding: 40px 32px;
-  background: #fff;
-  border-radius: 20px;
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  min-height: 140px;
-  box-shadow: 0 6px 16px -10px rgba(31,29,26,0.1);
-  transition: transform .25s;
+  padding: 36px 28px !important;
+  background: #fff !important;
+  border-radius: 20px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+  min-height: 120px !important;
+  box-shadow: 0 6px 16px -10px rgba(31,29,26,0.1) !important;
+  transition: transform .25s !important;
+  box-sizing: border-box !important;
 }
-.audience-card:hover { transform: translateY(-3px); }
+.audience-card:hover { transform: translateY(-3px) !important; }
 .audience-card .no {
-  font-family: var(--serif);
-  font-weight: 700;
-  font-size: 38px;
-  color: var(--sky-deep);
-  line-height: 0.9;
-  flex-shrink: 0;
-  min-width: 50px;
+  font-family: var(--serif) !important;
+  font-weight: 700 !important;
+  font-size: 38px !important;
+  color: var(--sky-deep) !important;
+  line-height: 0.9 !important;
+  flex-shrink: 0 !important;
+  min-width: 46px !important;
 }
-.audience-card:nth-child(2n) .no { color: var(--coral); }
-.audience-card:nth-child(3n) .no { color: var(--leaf); }
-.audience-card:nth-child(4n) .no { color: var(--sun); }
-.audience-card p { margin: 6px 0 0; font-size: 17px; line-height: 2.0; color: var(--ink); font-weight: 500; }
-@media (max-width: 760px) { .audience-grid { grid-template-columns: 1fr; } }
+.audience-card:nth-child(2n) .no { color: var(--coral) !important; }
+.audience-card:nth-child(3n) .no { color: var(--leaf) !important; }
+.audience-card p { margin: 6px 0 0 !important; font-size: 16px !important; line-height: 1.9 !important; color: var(--ink) !important; font-weight: 500 !important; }
+@media (max-width: 760px) { .audience-grid { grid-template-columns: 1fr !important; } }
 
 /* ===================== SCHEDULE ===================== */
 .sched-grid {
