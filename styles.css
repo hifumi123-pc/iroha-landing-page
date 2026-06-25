@@ -233,7 +233,7 @@ button { font: inherit; color: inherit; }
 }
 .hero-sub-row p {
   font-family: var(--sans);
-  font-size: clamp(17px, 2.2vw, 21px); /* 見出しに負けない美しいレスポンシブサイズ */
+  font-size: clamp(19px, 2.5vw, 24px); /* 見出しに負けない美しいレスポンシブサイズ */
   line-height: 1.9; /* 行間を適度に詰めて可読性を向上 */
   color: var(--ink-soft);
   margin: 0;
@@ -322,10 +322,10 @@ section.block.warm { background: var(--paper-tint); }
 }
 .section-head .right { padding-top: 20px; }
 .section-head .lead {
-  font-size: 22px; /* 右側のリード文も少し読みやすく大きく */
+  font-size: clamp(19px, 2.5vw, 24px); /* 右側のリード文も少し読みやすく大きく */
   line-height: 2.1;
   color: var(--ink-soft);
-  max-width: 600px;
+  max-width: 680px;
   overflow-wrap: break-word;
 }
 .section-head .lead .accent {
@@ -408,7 +408,7 @@ section.block.warm { background: var(--paper-tint); }
 }
 
 .about-body p {
-  font-size: 22px;
+  font-size: clamp(19px, 2.5vw, 24px);
   line-height: 2.3;
   margin: 0 0 24px;
   color: var(--ink-soft);
@@ -788,7 +788,7 @@ section.block.warm { background: var(--paper-tint); }
   font-family: var(--sans); font-size: 20px; color: var(--sky-deep);
   margin-bottom: 28px;
 }
-.inst-text p { font-size: 20px; line-height: 2.15; color: var(--ink-soft); margin: 0 0 20px; }
+.inst-text p { font-size: clamp(19px, 2.5vw, 24px); line-height: 2.15; color: var(--ink-soft); margin: 0 0 20px; }
 .inst-text p strong { color: var(--sky-deep); font-weight: 700; }
 .inst-credits {
   margin-top: 36px; padding-top: 28px;
