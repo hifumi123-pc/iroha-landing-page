@@ -369,10 +369,8 @@ section.block.warm { background: var(--paper-tint); }
 
 /* ===================== ABOUT ===================== */
 .about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .about-art {
   position: relative;
@@ -438,9 +436,7 @@ section.block.warm { background: var(--paper-tint); }
   color: var(--sky-deep);
   margin-top: 28px;
 }
-@media (max-width: 900px) {
-  .about-grid { grid-template-columns: 1fr; gap: 48px; }
-}
+
 
 /* ===================== VALUES ===================== */
 .values-grid {
