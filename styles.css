@@ -155,30 +155,23 @@ button { font: inherit; color: inherit; }
 }
 .hero-art {
   position: relative;
-  aspect-ratio: 16/10;
-  background: linear-gradient(180deg, #cfe6f3 0%, #e8d8b8 40%, #f4ead0 75%, #fdf9f0 100%);
+  aspect-ratio: 1000/600;
+  background: transparent;
   border-radius: 18px;
   overflow: hidden;
   margin-bottom: 56px;
   box-shadow: 0 24px 60px -28px rgba(31, 29, 26, 0.18);
 }
-/* painted-illustration placeholder texture */
+/* painted-illustration placeholder texture - disabled for gif banner */
 .hero-art::before {
   content: "";
   position: absolute; inset: 0;
-  background-image:
-    radial-gradient(ellipse 60% 30% at 50% 110%, rgba(143, 176, 116, 0.55), transparent 70%),
-    radial-gradient(ellipse 50% 30% at 30% 80%, rgba(143, 176, 116, 0.45), transparent 70%),
-    radial-gradient(ellipse 30% 18% at 80% 75%, rgba(143, 176, 116, 0.45), transparent 70%),
-    radial-gradient(ellipse 80% 35% at 50% 35%, rgba(233, 185, 76, 0.18), transparent 70%);
+  background: none;
 }
 .hero-art::after {
   content: "";
   position: absolute; inset: 0;
-  background-image:
-    repeating-linear-gradient(0deg, rgba(255,255,255,0.04) 0 2px, transparent 2px 5px),
-    radial-gradient(circle at 50% 50%, transparent 0%, rgba(255,255,255,0.08) 100%);
-  mix-blend-mode: overlay;
+  background: none;
 }
 
 .hero-headline {
