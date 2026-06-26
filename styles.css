@@ -445,34 +445,38 @@ section.block.warm { background: var(--paper-tint); }
   gap: 28px;
 }
 .value {
-  background: #fff;
-  border-radius: 24px;
-  padding: 48px 36px 40px;
-  position: relative;
-  transition: transform .25s ease, box-shadow .25s ease;
-  box-shadow: 0 6px 20px -12px rgba(31,29,26,0.12);
+  background: #fff !important;
+  border-radius: 24px !important;
+  padding: 56px 28px 48px !important;
+  position: relative !important;
+  transition: transform .25s ease, box-shadow .25s ease !important;
+  box-shadow: 0 6px 20px -12px rgba(31,29,26,0.12) !important;
 }
 .value:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -18px rgba(31,29,26,0.18); }
 .value .no {
-  position: absolute; top: -20px; left: 36px;
-  background: var(--sun);
-  color: var(--ink);
-  font-family: var(--hand);
-  font-weight: 700;
-  width: 56px; height: 56px;
-  border-radius: 50%;
-  display: grid; place-items: center;
-  font-size: 22px;
-  box-shadow: 0 4px 0 rgba(0,0,0,0.1);
+  position: absolute; top: -24px; left: 28px;
+  background: var(--sun) !important;
+  color: var(--ink) !important;
+  font-family: var(--hand) !important;
+  font-weight: 700 !important;
+  width: 64px !important; height: 64px !important;
+  border-radius: 50% !important;
+  display: grid !important; place-items: center !important;
+  font-size: 26px !important;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.1) !important;
 }
-.value:nth-child(2) .no { background: var(--leaf); }
-.value:nth-child(3) .no { background: var(--coral); color: #fff; }
+.value:nth-child(2) .no { background: var(--leaf) !important; }
+.value:nth-child(3) .no { background: var(--coral) !important; color: #fff !important; }
 .value h3 {
-  font-family: var(--serif); font-weight: 700; font-size: 32px;
-  margin: 24px 0 4px; letter-spacing: 0.1em;
+  font-family: var(--serif) !important; font-weight: 700 !important;
+  font-size: clamp(26px, 3.2vw, 34px) !important;
+  margin: 20px 0 10px !important; letter-spacing: 0.1em !important;
 }
 .value p {
-  font-size: 15px; line-height: 2; color: var(--ink-soft); margin: 0;
+  font-size: clamp(19px, 2.4vw, 23px) !important;
+  line-height: 1.95 !important;
+  color: var(--ink-soft) !important;
+  margin: 0 !important;
 }
 .value .icon {
   width: 64px; height: 64px;
