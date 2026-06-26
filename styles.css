@@ -1081,7 +1081,7 @@ section.block.warm { background: var(--paper-tint); }
   height: 5px; background: var(--sun); border-radius: 999px; opacity: 0.7;
 }
 .contact-card .lead {
-  font-size: 18px; line-height: 2.1; color: var(--ink-soft); margin: 0 0 48px;
+  font-size: clamp(19px, 2.5vw, 24px) !important; line-height: 2.1 !important; color: var(--ink-soft) !important; margin: 0 0 48px !important;
 }
 .contact-card .channels {
   margin-top: 56px;
@@ -1104,14 +1104,14 @@ section.block.warm { background: var(--paper-tint); }
 }
 .channel:hover { transform: translateY(-3px); background: var(--paper-soft); }
 .channel .icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background: var(--sun);
   color: var(--ink);
   font-family: var(--serif);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
   display: grid;
   place-items: center;
 }
@@ -1120,26 +1120,26 @@ section.block.warm { background: var(--paper-tint); }
 .channel .label {
   display: block;
   font-family: var(--sans);
-  font-size: 14px;
+  font-size: clamp(16px, 2vw, 19px);
   color: var(--sky-deep);
   font-weight: 700;
 }
 .channel .channel-value {
   font-family: var(--sans);
   font-weight: 700;
-  font-size: 14px;
+  font-size: clamp(17px, 2vw, 20px);
   line-height: 1.45;
   letter-spacing: 0.02em;
   color: var(--ink);
   background: #fff;
   border-radius: 12px;
-  padding: 14px 8px;
+  padding: 14px 10px;
   width: 100%;
   text-align: center;
   word-break: break-all;
   overflow-wrap: anywhere;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
-  min-height: 68px;
+  min-height: 76px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1167,14 +1167,14 @@ section.block.warm { background: var(--paper-tint); }
   background: var(--paper-soft) !important;
 }
 .iroha-lp-wrapper .contact-card .channels a.channel .icon {
-  width: 48px !important;
-  height: 48px !important;
+  width: 56px !important;
+  height: 56px !important;
   border-radius: 50% !important;
   background: var(--sun) !important;
   color: var(--ink) !important;
   font-family: var(--serif) !important;
   font-weight: 700 !important;
-  font-size: 18px !important;
+  font-size: 22px !important;
   display: grid !important;
   place-items: center !important;
 }
@@ -1188,36 +1188,36 @@ section.block.warm { background: var(--paper-tint); }
 .iroha-lp-wrapper .contact-card .channels a.channel .label {
   display: block !important;
   font-family: var(--sans) !important;
-  font-size: 14px !important;
+  font-size: clamp(16px, 2vw, 19px) !important;
   color: var(--sky-deep) !important;
   font-weight: 700 !important;
 }
 .iroha-lp-wrapper .contact-card .channels a.channel .channel-value {
   font-family: var(--sans) !important;
   font-weight: 700 !important;
-  font-size: 14px !important;
+  font-size: clamp(17px, 2vw, 20px) !important;
   line-height: 1.45 !important;
   letter-spacing: 0.02em !important;
   color: var(--ink) !important;
   background: #fff !important;
   border-radius: 12px !important;
-  padding: 14px 8px !important;
+  padding: 14px 10px !important;
   width: 100% !important;
   text-align: center !important;
   word-break: break-all !important;
   overflow-wrap: anywhere !important;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.03) !important;
-  min-height: 68px !important;
+  min-height: 76px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   box-sizing: border-box !important;
 }
 .contact-card .signoff {
-  margin-top: 48px;
-  font-size: 14px; color: var(--ink-mute); letter-spacing: 0.04em;
+  margin-top: 48px !important;
+  font-size: clamp(16px, 1.8vw, 19px) !important; color: var(--ink-mute) !important; letter-spacing: 0.04em !important;
 }
-.contact-card .signoff strong { color: var(--ink); font-weight: 700; }
+.contact-card .signoff strong { color: var(--ink) !important; font-weight: 700 !important; }
 @media (max-width: 720px) {
   .iroha-lp-wrapper .contact {
     padding: 60px 16px !important;
