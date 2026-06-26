@@ -836,17 +836,18 @@ section.block.warm { background: var(--paper-tint); }
   display: flex; gap: 8px;
 }
 .price-card .badge {
-  background: var(--sun); color: var(--ink);
-  font-family: var(--sans); font-weight: 700;
-  padding: 6px 18px; border-radius: 999px;
-  font-size: 14px; letter-spacing: 0.06em;
+  background: var(--sun) !important; color: var(--ink) !important;
+  font-family: var(--sans) !important; font-weight: 700 !important;
+  padding: 8px 22px !important; border-radius: 999px !important;
+  font-size: clamp(16px, 2vw, 19px) !important; letter-spacing: 0.06em !important;
 }
 .price-card .badge.alt {
-  background: var(--ink); color: var(--paper);
+  background: var(--ink) !important; color: var(--paper) !important;
 }
 .price-card h3 {
-  font-family: var(--serif); font-weight: 700; font-size: 28px;
-  margin: 16px 0 28px; letter-spacing: 0.06em;
+  font-family: var(--serif) !important; font-weight: 700 !important;
+  font-size: clamp(28px, 3.5vw, 36px) !important;
+  margin: 20px 0 28px !important; letter-spacing: 0.06em !important;
 }
 .price-amount {
   font-family: var(--serif);
@@ -861,31 +862,39 @@ section.block.warm { background: var(--paper-tint); }
 .price-amount .num { font-size: 76px; line-height: 1; letter-spacing: 0.02em; }
 .price-amount .per { font-size: 15px; color: var(--ink-mute); margin-left: 10px; font-family: var(--sans); font-weight: 400; }
 .price-card .meta {
-  font-family: var(--sans); font-size: 14px; color: var(--ink-mute);
-  padding-bottom: 24px; border-bottom: 1px dashed var(--line);
+  font-family: var(--sans) !important;
+  font-size: clamp(17px, 2.1vw, 21px) !important;
+  color: var(--ink-mute) !important;
+  padding-bottom: 24px !important; border-bottom: 1px dashed var(--line) !important;
 }
 .price-card ul {
   list-style: none; padding: 0; margin: 28px 0;
   display: grid; gap: 14px;
 }
 .price-card li {
-  display: grid; grid-template-columns: 28px 1fr; gap: 4px;
-  font-size: 15px; line-height: 1.8;
+  display: grid !important; grid-template-columns: 32px 1fr !important; gap: 6px !important;
+  font-size: clamp(19px, 2.5vw, 24px) !important; line-height: 1.95 !important;
 }
 .price-card li .check {
-  color: var(--sky-deep); font-size: 18px;
-  display: grid; place-items: center;
-  font-weight: 700;
+  color: var(--sky-deep) !important;
+  font-size: clamp(22px, 2.8vw, 28px) !important;
+  display: grid !important; place-items: center !important;
+  font-weight: 700 !important;
+}
+.price-card .price-note {
+  padding: 20px 24px !important;
+  font-size: clamp(16px, 2vw, 19px) !important;
+  line-height: 1.85 !important;
 }
 .price-card .guarantee {
-  margin-top: 28px;
-  padding: 18px 22px;
-  background: var(--paper-soft);
-  border-radius: 16px;
-  font-size: 14px;
-  color: var(--ink-soft);
-  display: flex; gap: 14px; align-items: center;
-  line-height: 1.7;
+  margin-top: 28px !important;
+  padding: 22px 26px !important;
+  background: var(--paper-soft) !important;
+  border-radius: 16px !important;
+  font-size: clamp(17px, 2.1vw, 21px) !important;
+  color: var(--ink-soft) !important;
+  display: flex !important; gap: 14px !important; align-items: center !important;
+  line-height: 1.8 !important;
 }
 .price-card .guarantee .seal {
   width: 44px; height: 44px; border-radius: 50%;
