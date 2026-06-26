@@ -938,36 +938,44 @@ section.block.warm { background: var(--paper-tint); }
   position: relative;
 }
 .flow-step {
-  background: #fff;
-  border-radius: 24px;
-  padding: 40px 28px;
-  position: relative;
-  text-align: center;
-  box-shadow: 0 6px 20px -14px rgba(31,29,26,0.15);
+  background: #fff !important;
+  border-radius: 24px !important;
+  padding: 40px 20px 48px !important;
+  position: relative !important;
+  text-align: center !important;
+  box-shadow: 0 6px 20px -14px rgba(31,29,26,0.15) !important;
 }
 .flow-step .circle {
-  width: 80px; height: 80px;
-  border-radius: 50%;
-  background: var(--sun);
-  display: grid; place-items: center;
-  font-family: var(--serif); font-weight: 700;
-  font-size: 28px; color: var(--ink);
-  margin: 0 auto 20px;
-  box-shadow: 0 4px 0 rgba(0,0,0,0.1);
+  width: 88px !important; height: 88px !important;
+  border-radius: 50% !important;
+  background: var(--sun) !important;
+  display: grid !important; place-items: center !important;
+  font-family: var(--serif) !important; font-weight: 700 !important;
+  font-size: 32px !important; color: var(--ink) !important;
+  margin: 0 auto 20px !important;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.1) !important;
 }
-.flow-step:nth-child(2) .circle { background: var(--leaf); }
-.flow-step:nth-child(3) .circle { background: var(--sky); color: #fff; }
-.flow-step:nth-child(4) .circle { background: var(--coral); color: #fff; }
+.flow-step:nth-child(2) .circle { background: var(--leaf) !important; }
+.flow-step:nth-child(3) .circle { background: var(--sky) !important; color: #fff !important; }
+.flow-step:nth-child(4) .circle { background: var(--coral) !important; color: #fff !important; }
 .flow-step h4 {
-  font-family: var(--serif); font-weight: 700; font-size: 21px;
-  margin: 0 0 8px; letter-spacing: 0.06em;
+  font-family: var(--serif) !important; font-weight: 700 !important;
+  font-size: clamp(20px, 2.5vw, 24px) !important;
+  margin: 0 0 12px !important; letter-spacing: 0.06em !important;
+  line-height: 1.4 !important;
 }
 .flow-step .en {
-  font-family: var(--sans); font-size: 14px;
-  color: var(--sky-deep); margin-bottom: 14px;
-  font-weight: 700;
+  font-family: var(--sans) !important; font-size: clamp(14px, 1.8vw, 17px) !important;
+  color: var(--sky-deep) !important; margin-bottom: 14px !important;
+  font-weight: 700 !important;
 }
-.flow-step p { font-size: 14px; line-height: 1.95; color: var(--ink-soft); margin: 0; text-align: left; }
+.flow-step p {
+  font-size: clamp(17px, 2.2vw, 21px) !important;
+  line-height: 1.95 !important;
+  color: var(--ink-soft) !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
 @media (max-width: 900px) {
   .flow-grid { grid-template-columns: 1fr 1fr; }
 }
