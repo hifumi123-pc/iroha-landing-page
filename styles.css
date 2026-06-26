@@ -183,13 +183,13 @@ button { font: inherit; color: inherit; }
   padding: 0 8px;
 }
 .hero h2.hero-title {
-  font-family: var(--serif);
-  font-weight: 700;
-  font-size: clamp(28px, 4.8vw, 54px);   /* フォントを少し小さく調整 */
-  line-height: 1.6;
-  letter-spacing: 0.06em;
-  margin: 0;
-  color: var(--ink);
+  font-family: var(--serif) !important;
+  font-weight: 700 !important;
+  font-size: clamp(22px, 4.2vw, 46px) !important;   /* スマホ最小22px、PC最大46pxに調整して千切れ防止 */
+  line-height: 1.6 !important;
+  letter-spacing: 0.06em !important;
+  margin: 0 !important;
+  color: var(--ink) !important;
 }
 .hero h2.hero-title em {
   font-style: normal;
@@ -310,15 +310,15 @@ section.block.warm { background: var(--paper-tint); }
 }
 .section-head .left { position: relative; }
 .section-head h2 {
-  font-family: var(--serif);
-  font-weight: 700;
-  font-size: clamp(26px, 3.8vw, 40px); /* 3行のちぎれを防ぐ美しいサイズ上限 */
-  line-height: 1.4;
-  margin: 18px 0 0;
-  letter-spacing: 0.06em;
-  position: relative;
-  word-break: keep-all; /* 単語の途中で不自然に改行されるのを防止 */
-  overflow-wrap: anywhere;
+  font-family: var(--serif) !important;
+  font-weight: 700 !important;
+  font-size: clamp(22px, 3.5vw, 36px) !important; /* スマホ最小値を22pxに下げて千切れを防止 */
+  line-height: 1.4 !important;
+  margin: 18px 0 0 !important;
+  letter-spacing: 0.06em !important;
+  position: relative !important;
+  word-break: keep-all !important; /* 単語の途中で不自然に改行されるのを防止 */
+  overflow-wrap: anywhere !important;
 }
 .section-head .right { padding-top: 20px; }
 .section-head .lead {
@@ -785,8 +785,9 @@ section.block.warm { background: var(--paper-tint); }
 }
 
 .inst-text h3 {
-  font-family: var(--serif); font-weight: 700; font-size: 38px;
-  margin: 0 0 12px; letter-spacing: 0.06em; line-height: 1.55;
+  font-family: var(--serif) !important; font-weight: 700 !important;
+  font-size: clamp(22px, 3.5vw, 34px) !important; /* スマホ最小値を22pxに設定して千切れ防止 */
+  margin: 0 0 12px !important; letter-spacing: 0.06em !important; line-height: 1.55 !important;
 }
 .inst-text .loc {
   font-family: var(--sans); font-size: 20px; color: var(--sky-deep);
