@@ -1467,10 +1467,10 @@ button.nav-pill {
 /* HEROバルーンリンクとレスポンシブ表示用 */
 .hero-balloon-link {
   position: absolute;
-  right: 2%;
-  top: 4%;
-  width: 18%;
-  height: 17%;
+  right: 2.5%;
+  top: 29.5%;
+  width: 17.5%;
+  height: 12.5%;
   z-index: 10;
   border-radius: 50%;
   cursor: pointer;
@@ -1478,13 +1478,13 @@ button.nav-pill {
 
 @media (max-width: 768px) {
   .hero-art {
-    aspect-ratio: 720/900 !important;
+    aspect-ratio: 864/1821 !important;
   }
   .hero-balloon-link {
-    right: 2% !important;
-    top: 8% !important;
-    width: 23% !important;
-    height: 9% !important;
+    right: 20% !important;
+    top: 33.5% !important;
+    width: 25% !important;
+    height: 6.5% !important;
   }
 }
 
