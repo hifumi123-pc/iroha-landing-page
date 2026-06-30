@@ -160,9 +160,12 @@
 <!-- ============ HERO ============ -->
 <header class="hero" id="top" data-screen-label="hero">
   <div class="hero-art">
-    <img src="https://123.okinawa/wp-content/uploads/2026/06/okinawa-ai.webp" alt="沖縄AI教室いろは メインビジュアル" style="position:absolute; inset:0; width:100%; height:100%; object-fit:contain;" />
+    <picture>
+      <source media="(max-width: 768px)" srcset="https://123.okinawa/wp-content/uploads/2026/06/iroha2026.6.30s.webp">
+      <img src="https://123.okinawa/wp-content/uploads/2026/06/iroha2026.6.30.webp" alt="沖縄AI教室いろは メインビジュアル" style="position:absolute; inset:0; width:100%; height:100%; object-fit:contain;" />
+    </picture>
     <!-- 「無料体験実施中」の赤いバルーン部分へのリンクオーバーレイ（タップすると無料体験までの流れへ移動） -->
-    <a href="#flow" style="position: absolute; right: 2.5%; top: 7.5%; width: 19%; height: 20%; z-index: 10; border-radius: 50%; cursor: pointer;" title="無料体験までの流れへ"></a>
+    <a href="#flow" class="hero-balloon-link" title="無料体験までの流れへ"></a>
   </div>
   <div class="hero-headline">
     <h2 class="hero-title">

@@ -1464,3 +1464,27 @@ button.nav-pill {
   .pc-only { display: none !important; }
 }
 
+/* HEROバルーンリンクとレスポンシブ表示用 */
+.hero-balloon-link {
+  position: absolute;
+  right: 2%;
+  top: 4%;
+  width: 18%;
+  height: 17%;
+  z-index: 10;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero-art {
+    aspect-ratio: 720/900 !important;
+  }
+  .hero-balloon-link {
+    right: 2% !important;
+    top: 8% !important;
+    width: 23% !important;
+    height: 9% !important;
+  }
+}
+
