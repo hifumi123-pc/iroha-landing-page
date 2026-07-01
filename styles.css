@@ -1464,56 +1464,38 @@ button.nav-pill {
   .pc-only { display: none !important; }
 }
 
-/* HEROバルーンボタン */
-.hero-balloon-btn {
-  position: absolute;
-  right: 6%;
-  top: 62%;
-  width: 140px;
-  height: 140px;
-  background: #e63a3a;
-  color: #fff;
-  border-radius: 50%;
+/* HERO CTAボタン (画像下の横長ボタン) */
+.hero-actions {
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  margin-top: 36px;
+  margin-bottom: 56px;
+}
+.hero-cta-btn {
+  width: 100%;
+  max-width: 440px;
+  padding: 20px 32px;
+  font-size: 21px;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 1.35;
-  text-decoration: none;
-  box-shadow: 0 12px 32px rgba(230, 58, 58, 0.45);
-  z-index: 12;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease, box-shadow 0.3s ease;
-  animation: balloonPulse 2.5s infinite ease-in-out;
+  border-radius: 50px;
+  justify-content: center;
+  box-shadow: 0 12px 32px rgba(233, 185, 76, 0.35);
+  animation: buttonPulse 2.5s infinite ease-in-out;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.hero-balloon-btn span {
-  display: block;
-}
-.hero-balloon-btn::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 25%;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 14px 11px 0 0;
-  border-color: #e63a3a transparent transparent transparent;
-}
-.hero-balloon-btn:hover {
-  transform: scale(1.12) rotate(4deg) !important;
-  background: #f04b4b;
-  box-shadow: 0 16px 40px rgba(230, 58, 58, 0.6);
-  color: #fff;
+.hero-cta-btn:hover {
+  transform: translateY(-4px) scale(1.02) !important;
+  box-shadow: 0 16px 40px rgba(233, 185, 76, 0.5) !important;
 }
 
-@keyframes balloonPulse {
+@keyframes buttonPulse {
   0%, 100% {
-    transform: translateY(0) scale(1);
+    transform: scale(1);
+    box-shadow: 0 12px 32px rgba(233, 185, 76, 0.35);
   }
   50% {
-    transform: translateY(-8px) scale(1.04);
+    transform: scale(1.03);
+    box-shadow: 0 16px 40px rgba(233, 185, 76, 0.55);
   }
 }
 
@@ -1521,17 +1503,14 @@ button.nav-pill {
   .hero-art {
     aspect-ratio: 1/1 !important;
   }
-  .hero-balloon-btn {
-    right: 8% !important;
-    top: 62% !important;
-    width: 100px;
-    height: 100px;
-    font-size: 13px;
-    box-shadow: 0 8px 24px rgba(230, 58, 58, 0.4);
+  .hero-actions {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    padding: 0 20px;
   }
-  .hero-balloon-btn::after {
-    bottom: -6px;
-    border-width: 10px 8px 0 0;
+  .hero-cta-btn {
+    font-size: 18px;
+    padding: 16px 28px;
   }
 }
 
