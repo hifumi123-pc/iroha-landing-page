@@ -155,7 +155,7 @@ button { font: inherit; color: inherit; }
 }
 .hero-art {
   position: relative;
-  aspect-ratio: 1000/600;
+  aspect-ratio: 1/1;
   background: transparent;
   border-radius: 18px;
   overflow: hidden;
@@ -1467,8 +1467,8 @@ button.nav-pill {
 /* HEROバルーンボタン */
 .hero-balloon-btn {
   position: absolute;
-  right: 3%;
-  top: 72%;
+  right: 6%;
+  top: 62%;
   width: 140px;
   height: 140px;
   background: #e63a3a;
@@ -1519,11 +1519,11 @@ button.nav-pill {
 
 @media (max-width: 768px) {
   .hero-art {
-    aspect-ratio: 948/1659 !important;
+    aspect-ratio: 1/1 !important;
   }
   .hero-balloon-btn {
-    right: 12% !important;
-    top: 84% !important;
+    right: 8% !important;
+    top: 62% !important;
     width: 100px;
     height: 100px;
     font-size: 13px;
