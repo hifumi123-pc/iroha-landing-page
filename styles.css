@@ -628,7 +628,7 @@ section.block.warm { background: var(--paper-tint); }
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   gap: 80px;
-  align-items: center;
+  align-items: stretch;
 }
 .sched-info {
   display: grid;
@@ -683,12 +683,26 @@ section.block.warm { background: var(--paper-tint); }
   display: flex;
   flex-direction: column;
   gap: 24px;
+  height: 100%;
 }
 .sched-gallery .sched-art {
-  aspect-ratio: 3/2;
+  flex: 1;
+  min-height: 0;
+  aspect-ratio: auto !important;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 40px -22px rgba(31,29,26,0.22);
+}
+.sched-gallery .sched-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .sched-gallery .sched-parking {
-  aspect-ratio: 800/460;
+  flex: 1;
+  min-height: 0;
+  aspect-ratio: auto !important;
   border-radius: 24px;
   position: relative;
   overflow: hidden;
@@ -733,6 +747,15 @@ section.block.warm { background: var(--paper-tint); }
 }
 @media (max-width: 900px) {
   .sched-grid { grid-template-columns: 1fr; gap: 48px; }
+  .sched-gallery {
+    height: auto;
+  }
+  .sched-gallery .sched-art {
+    aspect-ratio: 3/2 !important;
+  }
+  .sched-gallery .sched-parking {
+    aspect-ratio: 800/460 !important;
+  }
 }
 
 /* ===================== INSTRUCTOR ===================== */
